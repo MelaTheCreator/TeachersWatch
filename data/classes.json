@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1a",
+    "grade": "1a",
+    "students": [
+      "Emma Müller",
+      "Noah Schneider",
+      "Mia Fischer",
+      "Paul Weber",
+      "Hanna Becker",
+      "Leon Wagner",
+      "Lina Hoffmann",
+      "Ben Richter",
+      "Clara Neumann",
+      "Felix Braun",
+      "Marie Wolf",
+      "Jonas Schäfer"
+    ],
+    "subjects": [
+      {
+        "name": "Deutsch",
+        "teacher": "Frau Müller"
+      },
+      {
+        "name": "Mathematik",
+        "teacher": "Herr Schneider"
+      },
+      {
+        "name": "Sachunterricht",
+        "teacher": "Frau Becker"
+      },
+      {
+        "name": "Musik",
+        "teacher": "Herr Wagner"
+      },
+      {
+        "name": "Kunst",
+        "teacher": "Frau Hoffmann"
+      },
+      {
+        "name": "Sport",
+        "teacher": "Herr Richter"
+      },
+      {
+        "name": "Religion / Ethik",
+        "teacher": "Frau Neumann"
+      },
+      {
+        "name": "Englisch (ab Klasse 3 – vorbereitet)",
+        "teacher": "Frau Braun"
+      }
+    ]
+  }
+]

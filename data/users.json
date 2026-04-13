@@ -1,0 +1,20 @@
+[
+  {
+    "id": "edfee18d-dd42-4c83-b2b7-d9b87e8b940c",
+    "name": "Mela Heß",
+    "email": "mela@gmx.de",
+    "password": "$2b$10$rk03Bgb8DLtPL72qbBMOWu9R9gDOKaafRXKU0CQAoXMzDGhr38puK"
+  },
+  {
+    "id": "f2b7ff83-17f5-4586-ac0b-94f9e2e33955",
+    "name": "Hanna Berger",
+    "email": "hanna@gmx.de",
+    "password": "$2b$10$7TgUZU0futZab2jj3ntI1OE6bLsgoxOdUcaC1mkIvZCSd/HzZRtUa"
+  },
+  {
+    "id": "e87160ae-824c-490f-986e-4a238b4eed15",
+    "name": "Argon",
+    "email": "argon-hund@yahoo.de",
+    "password": "$2b$10$cGkIjvOV9zrkoimK6ZuBmePnFd7WEWwJMdB9AaBAsLSfllJ5de3By"
+  }
+]
