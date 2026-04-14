@@ -128,11 +128,18 @@ export default function ClassesPage() {
 
     loadClasses();
   }
+  if (!session) {
+    return (
+      <div className="p-6">
+        <h1 className="text-2xl font-bold">
+          Bitte einloggen, um diese Seite zu sehen
+        </h1>
+      </div>
+    );
+  }
 
   return (
-    <div className="p-6 max-w-3xl">
-      <h1 className="text-3xl font-bold mb-6">Klassen</h1>
-
+    <div className="p-6 max-w-3xl flex gap-20 flex-wrap">
       {/* ADMIN FORM */}
       {isAdmin && (
         <div className="mb-8 bg-white p-4 rounded shadow space-y-4">
@@ -211,6 +218,7 @@ export default function ClassesPage() {
 
       {/* LIST */}
       <div className="space-y-3">
+        <h1 className="text-3xl font-bold mb-6">Klassen</h1>
         {classes.map((c) => (
           <div
             key={c.id}

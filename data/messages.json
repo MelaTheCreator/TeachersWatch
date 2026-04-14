@@ -1,0 +1,16 @@
+[
+  {
+    "id": "5d0c6b68-5932-4f11-bfce-466e4acf3be6",
+    "userId": "hanna@gmx.de",
+    "userName": "Hanna Berger",
+    "text": "Hallo!",
+    "createdAt": 1776167432679
+  },
+  {
+    "id": "a5eb4085-3d32-4592-8497-25befa287b5c",
+    "userId": "mela@gmx.de",
+    "userName": "Mela Heß",
+    "text": "Naaa! Wo brennts denn?",
+    "createdAt": 1776167457035
+  }
+]

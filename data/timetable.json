@@ -1,0 +1,56 @@
+{
+  "1a": {
+    "Montag": {
+      "0": { "name": "Deutsch", "teacher": "Frau Müller", "room": "101" },
+      "1": { "name": "Mathematik", "teacher": "Herr Schneider", "room": "102" },
+      "2": {
+        "name": "Sachunterricht",
+        "teacher": "Frau Becker",
+        "room": "103"
+      },
+      "3": { "name": "Kunst", "teacher": "Frau Hoffmann", "room": "Kunstraum" },
+      "4": { "name": "Sport", "teacher": "Herr Richter", "room": "Turnhalle" }
+    },
+
+    "Dienstag": {
+      "0": { "name": "Mathematik", "teacher": "Herr Schneider", "room": "102" },
+      "1": { "name": "Deutsch", "teacher": "Frau Müller", "room": "101" },
+      "2": { "name": "Musik", "teacher": "Herr Wagner", "room": "Musikraum" },
+      "4": {
+        "name": "Religion / Ethik",
+        "teacher": "Frau Neumann / Herr Braun",
+        "room": "201 / 202"
+      }
+    },
+
+    "Mittwoch": {
+      "0": { "name": "Deutsch", "teacher": "Frau Müller", "room": "101" },
+      "1": { "name": "Mathematik", "teacher": "Herr Schneider", "room": "102" },
+      "2": {
+        "name": "Sachunterricht",
+        "teacher": "Frau Becker",
+        "room": "103"
+      },
+      "3": { "name": "Sport", "teacher": "Herr Richter", "room": "Turnhalle" }
+    },
+
+    "Donnerstag": {
+      "0": { "name": "Mathematik", "teacher": "Herr Schneider", "room": "102" },
+      "1": { "name": "Deutsch", "teacher": "Frau Müller", "room": "101" },
+      "2": { "name": "Musik", "teacher": "Herr Wagner", "room": "Musikraum" },
+      "3": { "name": "Kunst", "teacher": "Frau Hoffmann", "room": "Kunstraum" },
+      "4": { "name": "Sachunterricht", "teacher": "Frau Becker", "room": "103" }
+    },
+
+    "Freitag": {
+      "0": { "name": "Deutsch", "teacher": "Frau Müller", "room": "101" },
+      "1": { "name": "Mathematik", "teacher": "Herr Schneider", "room": "102" },
+      "2": {
+        "name": "Religion / Ethik",
+        "teacher": "Frau Neumann / Herr Braun",
+        "room": "201 / 202"
+      },
+      "3": { "name": "Sport", "teacher": "Herr Richter", "room": "Turnhalle" }
+    }
+  }
+}

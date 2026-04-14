@@ -3,18 +3,528 @@
     "id": "1a",
     "grade": "1a",
     "students": [
-      "Emma Müller",
-      "Noah Schneider",
-      "Mia Fischer",
-      "Paul Weber",
-      "Hanna Becker",
-      "Leon Wagner",
-      "Lina Hoffmann",
-      "Ben Richter",
-      "Clara Neumann",
-      "Felix Braun",
-      "Marie Wolf",
-      "Jonas Schäfer"
+      {
+        "id": "emma-mueller",
+        "name": "Emma Müller",
+        "grades": {
+          "Deutsch": [
+            1,
+            2
+          ],
+          "Mathematik": [
+            2,
+            1
+          ],
+          "Sachunterricht": [
+            1,
+            2,
+            2
+          ],
+          "Musik": [
+            1
+          ],
+          "Kunst": [
+            2
+          ],
+          "Sport": [
+            1
+          ],
+          "Religion / Ethik": [
+            2
+          ],
+          "Englisch": []
+        },
+        "ratings": {
+          "sozialverhalten": "sehr gut",
+          "arbeitsverhalten": "sehr gut",
+          "bemerkung": "Sehr konzentriert und hilfsbereit."
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "emma123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "emu2026"
+          }
+        ]
+      },
+      {
+        "id": "noah-schneider",
+        "name": "Noah Schneider",
+        "grades": {
+          "Deutsch": [
+            3
+          ],
+          "Mathematik": [
+            1,
+            2
+          ],
+          "Sachunterricht": [
+            2
+          ],
+          "Musik": [
+            2
+          ],
+          "Kunst": [
+            2
+          ],
+          "Sport": [
+            2
+          ],
+          "Religion / Ethik": [
+            1
+          ],
+          "Englisch": []
+        },
+        "ratings": {
+          "sozialverhalten": "gut",
+          "arbeitsverhalten": "gut",
+          "bemerkung": "Manchmal unruhig, aber motiviert."
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "noah123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "ns2026"
+          }
+        ]
+      },
+      {
+        "id": "mia-fischer",
+        "name": "Mia Fischer",
+        "grades": {
+          "Deutsch": [
+            1
+          ],
+          "Mathematik": [
+            1
+          ],
+          "Sachunterricht": [
+            1
+          ],
+          "Musik": [
+            1
+          ],
+          "Kunst": [
+            1
+          ],
+          "Sport": [
+            1
+          ],
+          "Religion / Ethik": [
+            1
+          ],
+          "Englisch": []
+        },
+        "ratings": {
+          "sozialverhalten": "sehr gut",
+          "arbeitsverhalten": "sehr gut",
+          "bemerkung": "Sehr leistungsstark und ruhig."
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "mia123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "mf2026"
+          }
+        ]
+      },
+      {
+        "id": "paul-weber",
+        "name": "Paul Weber",
+        "grades": {
+          "Deutsch": [
+            2
+          ],
+          "Mathematik": [
+            2,
+            3
+          ],
+          "Sachunterricht": [
+            2
+          ],
+          "Musik": [
+            2
+          ],
+          "Kunst": [
+            3
+          ],
+          "Sport": [
+            2
+          ],
+          "Religion / Ethik": [
+            2
+          ],
+          "Englisch": []
+        },
+        "ratings": {
+          "sozialverhalten": "gut",
+          "arbeitsverhalten": "befriedigend",
+          "bemerkung": "Braucht manchmal Unterstützung."
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "paul123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "pw2026"
+          }
+        ]
+      },
+      {
+        "id": "hanna-becker",
+        "name": "Hanna Becker",
+        "grades": {
+          "Deutsch": [
+            2
+          ],
+          "Mathematik": [
+            1
+          ],
+          "Sachunterricht": [
+            1
+          ],
+          "Musik": [
+            2
+          ],
+          "Kunst": [
+            1
+          ],
+          "Sport": [
+            1
+          ],
+          "Religion / Ethik": [
+            2
+          ],
+          "Englisch": []
+        },
+        "ratings": {
+          "sozialverhalten": "sehr gut",
+          "arbeitsverhalten": "gut",
+          "bemerkung": "Sehr kreativ und aufmerksam."
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "hanna123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "hb2026"
+          }
+        ]
+      },
+      {
+        "id": "leon-wagner",
+        "name": "Leon Wagner",
+        "grades": {
+          "Deutsch": [
+            3
+          ],
+          "Mathematik": [
+            2
+          ],
+          "Sachunterricht": [
+            2
+          ],
+          "Musik": [
+            1
+          ],
+          "Kunst": [
+            2
+          ],
+          "Sport": [
+            1
+          ],
+          "Religion / Ethik": [
+            2
+          ],
+          "Englisch": []
+        },
+        "ratings": {
+          "sozialverhalten": "gut",
+          "arbeitsverhalten": "gut",
+          "bemerkung": "Sportlich sehr stark."
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "leon123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "lw2026"
+          }
+        ]
+      },
+      {
+        "id": "lina-hoffmann",
+        "name": "Lina Hoffmann",
+        "grades": {
+          "Deutsch": [
+            1
+          ],
+          "Mathematik": [
+            2
+          ],
+          "Sachunterricht": [
+            1
+          ],
+          "Musik": [
+            1
+          ],
+          "Kunst": [
+            1
+          ],
+          "Sport": [
+            2
+          ],
+          "Religion / Ethik": [
+            1
+          ],
+          "Englisch": []
+        },
+        "ratings": {
+          "sozialverhalten": "sehr gut",
+          "arbeitsverhalten": "sehr gut",
+          "bemerkung": "Sehr ordentlich und zuverlässig."
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "lina123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "lh2026"
+          }
+        ]
+      },
+      {
+        "id": "ben-richter",
+        "name": "Ben Richter",
+        "grades": {
+          "Deutsch": [
+            2
+          ],
+          "Mathematik": [
+            2
+          ],
+          "Sachunterricht": [
+            3
+          ],
+          "Musik": [
+            2
+          ],
+          "Kunst": [
+            2
+          ],
+          "Sport": [
+            1
+          ],
+          "Religion / Ethik": [
+            2
+          ],
+          "Englisch": []
+        },
+        "ratings": {
+          "sozialverhalten": "gut",
+          "arbeitsverhalten": "befriedigend",
+          "bemerkung": "Sehr aktiv, braucht Fokus."
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "ben123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "br2026"
+          }
+        ]
+      },
+      {
+        "id": "clara-neumann",
+        "name": "Clara Neumann",
+        "grades": {
+          "Deutsch": [
+            1
+          ],
+          "Mathematik": [
+            1
+          ],
+          "Sachunterricht": [
+            1
+          ],
+          "Musik": [
+            1
+          ],
+          "Kunst": [
+            1
+          ],
+          "Sport": [
+            1
+          ],
+          "Religion / Ethik": [
+            1
+          ],
+          "Englisch": []
+        },
+        "ratings": {
+          "sozialverhalten": "sehr gut",
+          "arbeitsverhalten": "sehr gut",
+          "bemerkung": "Vorbildliches Verhalten."
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "clara123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "cn2026"
+          }
+        ]
+      },
+      {
+        "id": "felix-braun",
+        "name": "Felix Braun",
+        "grades": {
+          "Deutsch": [
+            2
+          ],
+          "Mathematik": [
+            3
+          ],
+          "Sachunterricht": [
+            2
+          ],
+          "Musik": [
+            2
+          ],
+          "Kunst": [
+            2
+          ],
+          "Sport": [
+            2
+          ],
+          "Religion / Ethik": [
+            2
+          ],
+          "Englisch": []
+        },
+        "ratings": {
+          "sozialverhalten": "gut",
+          "arbeitsverhalten": "befriedigend",
+          "bemerkung": "Braucht mehr Konzentration."
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "felix123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "fb2026"
+          }
+        ]
+      },
+      {
+        "id": "marie-wolf",
+        "name": "Marie Wolf",
+        "grades": {
+          "Deutsch": [
+            1
+          ],
+          "Mathematik": [
+            1
+          ],
+          "Sachunterricht": [
+            2
+          ],
+          "Musik": [
+            1
+          ],
+          "Kunst": [
+            1
+          ],
+          "Sport": [
+            1
+          ],
+          "Religion / Ethik": [
+            1
+          ],
+          "Englisch": []
+        },
+        "ratings": {
+          "sozialverhalten": "sehr gut",
+          "arbeitsverhalten": "sehr gut",
+          "bemerkung": "Sehr fleißig und kreativ."
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "marie123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "mw2026"
+          }
+        ]
+      },
+      {
+        "id": "jonas-schaefer",
+        "name": "Jonas Schäfer",
+        "grades": {
+          "Deutsch": [
+            3
+          ],
+          "Mathematik": [
+            2
+          ],
+          "Sachunterricht": [
+            2
+          ],
+          "Musik": [
+            2
+          ],
+          "Kunst": [
+            2
+          ],
+          "Sport": [
+            1
+          ],
+          "Religion / Ethik": [
+            2
+          ],
+          "Englisch": []
+        },
+        "ratings": {
+          "sozialverhalten": "gut",
+          "arbeitsverhalten": "befriedigend",
+          "bemerkung": "Sehr sportlich, schwankende Konzentration."
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "jonas123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "js2026"
+          }
+        ]
+      }
     ],
     "subjects": [
       {
@@ -46,7 +556,7 @@
         "teacher": "Frau Neumann"
       },
       {
-        "name": "Englisch (ab Klasse 3 – vorbereitet)",
+        "name": "Englisch",
         "teacher": "Frau Braun"
       }
     ]

@@ -40,7 +40,7 @@ async function writeClasses(classes: SchoolClass[]) {
  */
 export async function getClassById(classId: string) {
   const classes = await readClasses();
-  return classes.find((c) => c.grade === classId) || null;
+  return classes.find((c) => c.id === classId) || null;
 }
 
 /**
