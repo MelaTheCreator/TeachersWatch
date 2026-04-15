@@ -1,5 +1,7 @@
 import "./globals.css";
 import Providers from "./providers";
+import Sidebar from "@/components/Sidebar";
+import Header from "@/components/Header";
 
 export default function RootLayout({
   children,

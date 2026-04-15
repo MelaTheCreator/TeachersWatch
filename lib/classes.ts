@@ -1,6 +1,37 @@
 import fs from "fs/promises";
 import path from "path";
 
+export type RatingEntry = {
+  value: 1 | 2 | 3 | 4;
+  teacherId: string;
+  teacherName: string;
+  createdAt: string;
+};
+
+export type RatingFieldKey =
+  | "sozialverhalten"
+  | "unterricht"
+  | "pflichtbewusstsein"
+  | "schulordnung";
+
+export type RatingCategoryKey = "betragen";
+
+export type RatingsDetailed = Record<
+  RatingCategoryKey,
+  Record<RatingFieldKey, RatingEntry[]>
+>;
+
+export type Student = {
+  id: string;
+  name: string;
+  grades?: Record<string, number[]>;
+  ratingsDetailed?: RatingsDetailed;
+  passwords?: {
+    service: string;
+    password: string;
+  }[];
+};
+
 export type ClassSubject = {
   name: string;
   teacher: string;
@@ -9,7 +40,7 @@ export type ClassSubject = {
 export type SchoolClass = {
   id: string;
   grade: string;
-  students: string[];
+  students: Student[]; // ✅ WICHTIG FIX
   subjects: ClassSubject[];
 };
 
@@ -31,7 +62,7 @@ export async function readClasses(): Promise<SchoolClass[]> {
 /**
  * 💾 speichern
  */
-async function writeClasses(classes: SchoolClass[]) {
+export async function writeClasses(classes: SchoolClass[]) {
   await fs.writeFile(filePath, JSON.stringify(classes, null, 2));
 }
 

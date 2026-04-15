@@ -5,16 +5,33 @@ import { useEffect, useState } from "react";
 /* =========================
    TYPES
 ========================= */
+type RatingValue = 1 | 2 | 3 | 4;
+
+type RatingEntry = {
+  value: RatingValue;
+  teacherId: string;
+  teacherName: string;
+  createdAt: string;
+};
+
+type RatingFieldKey =
+  | "sozialverhalten"
+  | "unterricht"
+  | "pflichtbewusstsein"
+  | "schulordnung";
+
+type RatingCategoryKey = "betragen";
+
+type RatingsDetailed = Record<
+  RatingCategoryKey,
+  Record<RatingFieldKey, RatingEntry[]>
+>;
 
 export type Student = {
   id: string;
   name: string;
   grades?: Record<string, number[]>;
-  ratings?: {
-    sozialverhalten: string;
-    arbeitsverhalten: string;
-    bemerkung?: string;
-  };
+  ratingsDetailed: RatingsDetailed;
   passwords?: {
     service: string;
     password: string;
@@ -66,6 +83,7 @@ const TIMES = [
   "09:50 - 10:35",
   "10:35 - 11:20",
   "11:35 - 12:20",
+  "12:20 - 13:05",
 ];
 
 /* =========================
@@ -196,6 +214,55 @@ export default function ClassTabs({
   function calcAvg(grades: number[]) {
     if (!grades.length) return "-";
     return (grades.reduce((a, b) => a + b, 0) / grades.length).toFixed(2);
+  }
+
+  /* =========================
+     RATINGS
+  ========================= */
+  const [user, setUser] = useState<any>(null);
+
+  useEffect(() => {
+    fetch("/api/me")
+      .then((res) => res.json())
+      .then(setUser);
+  }, []);
+
+  const ratingCategories: Record<
+    RatingCategoryKey,
+    {
+      label: string;
+      fields: { key: RatingFieldKey; label: string }[];
+    }
+  > = {
+    betragen: {
+      label: "Betragen",
+      fields: [
+        { key: "sozialverhalten", label: "Sozialverhalten / Miteinander" },
+        { key: "unterricht", label: "Verhalten im Unterricht" },
+        { key: "pflichtbewusstsein", label: "Pflichtbewusstsein" },
+        { key: "schulordnung", label: "Einhaltung der Schulordnung" },
+      ],
+    },
+  };
+
+  const [activeRating, setActiveRating] =
+    useState<RatingCategoryKey>("betragen");
+
+  function getLatestRating(
+    student: Student,
+    field: RatingFieldKey,
+  ): RatingEntry | undefined {
+    return student.ratingsDetailed?.[activeRating]?.[field]?.slice(-1)[0];
+  }
+
+  function getAverageRating(student: any, category: string, field: string) {
+    const entries = student?.ratingsDetailed?.[category]?.[field];
+
+    if (!entries || entries.length === 0) return null;
+
+    const sum = entries.reduce((acc: number, curr: any) => acc + curr.value, 0);
+
+    return (sum / entries.length).toFixed(2);
   }
   /* =========================
      UI
@@ -480,7 +547,129 @@ export default function ClassTabs({
             </table>
           </div>
         )}
+        {/* =========================
+            BEWERTUNG
+        ========================= */}
 
+        {activeTab === "bewertungen" && (
+          <div className="space-y-4">
+            {/* SUB TABS */}
+            <div className="flex gap-2">
+              {Object.entries(ratingCategories).map(([key, cfg]) => (
+                <button
+                  key={key}
+                  onClick={() => setActiveRating(key as RatingCategoryKey)}
+                  className={`px-3 py-1 border rounded ${
+                    activeRating === key ? "bg-blue-600 text-white" : ""
+                  }`}
+                >
+                  {cfg.label}
+                </button>
+              ))}
+            </div>
+
+            {/* TABLE */}
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr>
+                    <th className="border p-2 bg-gray-100">Schüler</th>
+
+                    {ratingCategories[activeRating].fields.map((f) => (
+                      <th key={f.key} className="border p-2 bg-gray-100">
+                        {f.label}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {schoolClass.students.map((student) => (
+                    <tr key={student.id}>
+                      <td className="border p-2 font-medium">{student.name}</td>
+
+                      {ratingCategories[activeRating].fields.map((f) => {
+                        const latest = getLatestRating(student, f.key);
+                        const ard = getAverageRating(
+                          student,
+                          activeRating,
+                          f.key,
+                        );
+
+                        return (
+                          <td
+                            key={f.key}
+                            className="border p-2 text-center align-middle"
+                          >
+                            <div className="flex flex-col items-center gap-1">
+                              {/* Durchschnitt */}
+                              <div className="font-semibold">⌀ {ard}</div>
+
+                              {/* Buttons 1–4 */}
+                              <div className="flex gap-1">
+                                {[
+                                  { num: 1, color: "bg-green-500" },
+                                  { num: 2, color: "bg-yellow-400" },
+                                  { num: 3, color: "bg-orange-500" },
+                                  { num: 4, color: "bg-red-500" },
+                                ].map(({ num, color }) => (
+                                  <button
+                                    key={num}
+                                    onClick={async () => {
+                                      if (!user?.name) {
+                                        console.warn("User not loaded yet");
+                                        return;
+                                      }
+
+                                      await fetch(
+                                        `/api/classes/${schoolClass.id}/ratings`,
+                                        {
+                                          method: "PATCH",
+                                          headers: {
+                                            "Content-Type": "application/json",
+                                          },
+                                          body: JSON.stringify({
+                                            studentId: student.id,
+                                            category: activeRating,
+                                            field: f.key,
+                                            value: num,
+                                            teacherName: user.name,
+                                          }),
+                                        },
+                                      );
+                                    }}
+                                    className={`
+                              w-7 h-7 text-xs rounded text-white transition
+                              ${color}
+                              ${
+                                latest?.value === num
+                                  ? "ring-2 ring-black scale-110"
+                                  : "opacity-60 hover:opacity-100"
+                              }
+                            `}
+                                  >
+                                    {num}
+                                  </button>
+                                ))}
+                              </div>
+
+                              {/* Lehreranzeige */}
+                              {latest && (
+                                <div className="text-[10px] text-gray-400">
+                                  {latest.teacherName}
+                                </div>
+                              )}
+                            </div>
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
         {/* =========================
             PASSWÖRTER
         ========================= */}
@@ -544,7 +733,7 @@ export default function ClassTabs({
                 <div className="text-xs text-gray-400">
                   {new Date(note.createdAt).toLocaleString()}
                 </div>
-                <div>{note.text}</div>
+                <div className="flex flex-col-reverse">{note.text}</div>
               </div>
             ))}
           </div>

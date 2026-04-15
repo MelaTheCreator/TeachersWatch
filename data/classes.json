@@ -34,10 +34,71 @@
           ],
           "Englisch": []
         },
-        "ratings": {
-          "sozialverhalten": "sehr gut",
-          "arbeitsverhalten": "sehr gut",
-          "bemerkung": "Sehr konzentriert und hilfsbereit."
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [
+              {
+                "value": 1,
+                "teacherId": "FRAU_MUELLER",
+                "teacherName": "Frau Müller",
+                "createdAt": "2026-04-15T10:00:00Z"
+              },
+              {
+                "value": 2,
+                "createdAt": "2026-04-15T09:31:33.676Z"
+              }
+            ],
+            "unterricht": [
+              {
+                "value": 3,
+                "createdAt": "2026-04-15T09:24:23.301Z"
+              },
+              {
+                "value": 2,
+                "createdAt": "2026-04-15T09:29:38.844Z"
+              },
+              {
+                "value": 2,
+                "teacherId": null,
+                "teacherName": null,
+                "createdAt": "2026-04-15T09:36:25.554Z"
+              }
+            ],
+            "pflichtbewusstsein": [
+              {
+                "value": 2,
+                "teacherId": null,
+                "teacherName": "dd888137-a477-47bb-99d5-e0cd69ee6826",
+                "createdAt": "2026-04-15T09:59:18.765Z"
+              },
+              {
+                "value": 1,
+                "teacherId": null,
+                "teacherName": "dd888137-a477-47bb-99d5-e0cd69ee6826",
+                "createdAt": "2026-04-15T09:59:52.802Z"
+              },
+              {
+                "value": 2,
+                "teacherId": null,
+                "teacherName": "dd888137-a477-47bb-99d5-e0cd69ee6826",
+                "createdAt": "2026-04-15T10:05:02.527Z"
+              },
+              {
+                "value": 1,
+                "teacherId": null,
+                "teacherName": "Hans Dampf",
+                "createdAt": "2026-04-15T10:06:59.555Z"
+              }
+            ],
+            "schulordnung": [
+              {
+                "value": 1,
+                "teacherId": null,
+                "teacherName": "Mela Heß",
+                "createdAt": "2026-04-15T10:08:19.813Z"
+              }
+            ]
+          }
         },
         "passwords": [
           {
@@ -74,14 +135,57 @@
             2
           ],
           "Religion / Ethik": [
-            1
+            1,
+            2
           ],
           "Englisch": []
         },
-        "ratings": {
-          "sozialverhalten": "gut",
-          "arbeitsverhalten": "gut",
-          "bemerkung": "Manchmal unruhig, aber motiviert."
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [
+              {
+                "value": 2,
+                "teacherId": null,
+                "teacherName": "Hanna Berger",
+                "createdAt": "2026-04-15T09:50:39.761Z"
+              }
+            ],
+            "unterricht": [
+              {
+                "value": 2,
+                "teacherId": null,
+                "teacherName": null,
+                "createdAt": "2026-04-15T09:51:24.236Z"
+              },
+              {
+                "value": 1,
+                "teacherId": null,
+                "teacherName": null,
+                "createdAt": "2026-04-15T09:52:00.001Z"
+              },
+              {
+                "value": 2,
+                "teacherId": null,
+                "teacherName": null,
+                "createdAt": "2026-04-15T09:53:32.636Z"
+              },
+              {
+                "value": 1,
+                "teacherId": null,
+                "teacherName": "Hanna Berger",
+                "createdAt": "2026-04-15T10:50:31.633Z"
+              }
+            ],
+            "pflichtbewusstsein": [
+              {
+                "value": 2,
+                "teacherId": null,
+                "teacherName": null,
+                "createdAt": "2026-04-15T09:58:16.220Z"
+              }
+            ],
+            "schulordnung": []
+          }
         },
         "passwords": [
           {
@@ -121,10 +225,13 @@
           ],
           "Englisch": []
         },
-        "ratings": {
-          "sozialverhalten": "sehr gut",
-          "arbeitsverhalten": "sehr gut",
-          "bemerkung": "Sehr leistungsstark und ruhig."
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
         },
         "passwords": [
           {
@@ -165,10 +272,13 @@
           ],
           "Englisch": []
         },
-        "ratings": {
-          "sozialverhalten": "gut",
-          "arbeitsverhalten": "befriedigend",
-          "bemerkung": "Braucht manchmal Unterstützung."
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
         },
         "passwords": [
           {
@@ -208,10 +318,13 @@
           ],
           "Englisch": []
         },
-        "ratings": {
-          "sozialverhalten": "sehr gut",
-          "arbeitsverhalten": "gut",
-          "bemerkung": "Sehr kreativ und aufmerksam."
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
         },
         "passwords": [
           {
@@ -251,10 +364,13 @@
           ],
           "Englisch": []
         },
-        "ratings": {
-          "sozialverhalten": "gut",
-          "arbeitsverhalten": "gut",
-          "bemerkung": "Sportlich sehr stark."
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
         },
         "passwords": [
           {
@@ -294,10 +410,13 @@
           ],
           "Englisch": []
         },
-        "ratings": {
-          "sozialverhalten": "sehr gut",
-          "arbeitsverhalten": "sehr gut",
-          "bemerkung": "Sehr ordentlich und zuverlässig."
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
         },
         "passwords": [
           {
@@ -337,10 +456,13 @@
           ],
           "Englisch": []
         },
-        "ratings": {
-          "sozialverhalten": "gut",
-          "arbeitsverhalten": "befriedigend",
-          "bemerkung": "Sehr aktiv, braucht Fokus."
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
         },
         "passwords": [
           {
@@ -380,10 +502,13 @@
           ],
           "Englisch": []
         },
-        "ratings": {
-          "sozialverhalten": "sehr gut",
-          "arbeitsverhalten": "sehr gut",
-          "bemerkung": "Vorbildliches Verhalten."
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
         },
         "passwords": [
           {
@@ -423,10 +548,13 @@
           ],
           "Englisch": []
         },
-        "ratings": {
-          "sozialverhalten": "gut",
-          "arbeitsverhalten": "befriedigend",
-          "bemerkung": "Braucht mehr Konzentration."
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
         },
         "passwords": [
           {
@@ -466,10 +594,13 @@
           ],
           "Englisch": []
         },
-        "ratings": {
-          "sozialverhalten": "sehr gut",
-          "arbeitsverhalten": "sehr gut",
-          "bemerkung": "Sehr fleißig und kreativ."
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
         },
         "passwords": [
           {
@@ -509,10 +640,13 @@
           ],
           "Englisch": []
         },
-        "ratings": {
-          "sozialverhalten": "gut",
-          "arbeitsverhalten": "befriedigend",
-          "bemerkung": "Sehr sportlich, schwankende Konzentration."
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
         },
         "passwords": [
           {
@@ -522,6 +656,489 @@
           {
             "service": "Schulportal",
             "password": "js2026"
+          }
+        ]
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Deutsch",
+        "teacher": "Frau Müller"
+      },
+      {
+        "name": "Mathematik",
+        "teacher": "Herr Schneider"
+      },
+      {
+        "name": "Sachunterricht",
+        "teacher": "Frau Becker"
+      },
+      {
+        "name": "Musik",
+        "teacher": "Herr Wagner"
+      },
+      {
+        "name": "Kunst",
+        "teacher": "Frau Hoffmann"
+      },
+      {
+        "name": "Sport",
+        "teacher": "Herr Richter"
+      },
+      {
+        "name": "Religion / Ethik",
+        "teacher": "Frau Neumann"
+      },
+      {
+        "name": "Englisch",
+        "teacher": "Frau Braun"
+      }
+    ]
+  },
+  {
+    "id": "2a",
+    "grade": "2a",
+    "students": [
+      {
+        "id": "luca-meier",
+        "name": "Luca Meier",
+        "grades": {
+          "Deutsch": [
+            2,
+            2
+          ],
+          "Mathematik": [
+            1,
+            2
+          ],
+          "Sachunterricht": [
+            2
+          ],
+          "Musik": [
+            1
+          ],
+          "Kunst": [
+            2
+          ],
+          "Sport": [
+            1
+          ],
+          "Religion / Ethik": [
+            2
+          ],
+          "Englisch": [
+            1
+          ]
+        },
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "luca123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "lm2026"
+          }
+        ]
+      },
+      {
+        "id": "sophie-koch",
+        "name": "Sophie Koch",
+        "grades": {
+          "Deutsch": [
+            1,
+            1
+          ],
+          "Mathematik": [
+            1
+          ],
+          "Sachunterricht": [
+            1
+          ],
+          "Musik": [
+            1
+          ],
+          "Kunst": [
+            1
+          ],
+          "Sport": [
+            2
+          ],
+          "Religion / Ethik": [
+            1
+          ],
+          "Englisch": [
+            1
+          ]
+        },
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "sophie123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "sk2026"
+          }
+        ]
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Deutsch",
+        "teacher": "Frau Müller"
+      },
+      {
+        "name": "Mathematik",
+        "teacher": "Herr Schneider"
+      },
+      {
+        "name": "Sachunterricht",
+        "teacher": "Frau Becker"
+      },
+      {
+        "name": "Musik",
+        "teacher": "Herr Wagner"
+      },
+      {
+        "name": "Kunst",
+        "teacher": "Frau Hoffmann"
+      },
+      {
+        "name": "Sport",
+        "teacher": "Herr Richter"
+      },
+      {
+        "name": "Religion / Ethik",
+        "teacher": "Frau Neumann"
+      },
+      {
+        "name": "Englisch",
+        "teacher": "Frau Braun"
+      }
+    ]
+  },
+  {
+    "id": "3a",
+    "grade": "3a",
+    "students": [
+      {
+        "id": "max-keller",
+        "name": "Max Keller",
+        "grades": {
+          "Deutsch": [
+            2,
+            3
+          ],
+          "Mathematik": [
+            2
+          ],
+          "Sachunterricht": [
+            2
+          ],
+          "Musik": [
+            2
+          ],
+          "Kunst": [
+            3,
+            1
+          ],
+          "Sport": [
+            1
+          ],
+          "Religion / Ethik": [
+            2
+          ],
+          "Englisch": [
+            2
+          ]
+        },
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "max123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "mk2026"
+          }
+        ]
+      },
+      {
+        "id": "lea-schulz",
+        "name": "Lea Schulz",
+        "grades": {
+          "Deutsch": [
+            1,
+            2
+          ],
+          "Mathematik": [
+            1
+          ],
+          "Sachunterricht": [
+            1,
+            1
+          ],
+          "Musik": [
+            1
+          ],
+          "Kunst": [
+            1
+          ],
+          "Sport": [
+            1
+          ],
+          "Religion / Ethik": [
+            1
+          ],
+          "Englisch": [
+            1
+          ]
+        },
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [],
+            "unterricht": [],
+            "pflichtbewusstsein": [],
+            "schulordnung": []
+          }
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "lea123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "ls2026"
+          }
+        ]
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Deutsch",
+        "teacher": "Frau Müller"
+      },
+      {
+        "name": "Mathematik",
+        "teacher": "Herr Schneider"
+      },
+      {
+        "name": "Sachunterricht",
+        "teacher": "Frau Becker"
+      },
+      {
+        "name": "Musik",
+        "teacher": "Herr Wagner"
+      },
+      {
+        "name": "Kunst",
+        "teacher": "Frau Hoffmann"
+      },
+      {
+        "name": "Sport",
+        "teacher": "Herr Richter"
+      },
+      {
+        "name": "Religion / Ethik",
+        "teacher": "Frau Neumann"
+      },
+      {
+        "name": "Englisch",
+        "teacher": "Frau Braun"
+      }
+    ]
+  },
+  {
+    "id": "4a",
+    "grade": "4a",
+    "students": [
+      {
+        "id": "tim-hartmann",
+        "name": "Tim Hartmann",
+        "grades": {
+          "Deutsch": [
+            2
+          ],
+          "Mathematik": [
+            3
+          ],
+          "Sachunterricht": [
+            2
+          ],
+          "Musik": [
+            2
+          ],
+          "Kunst": [
+            2
+          ],
+          "Sport": [
+            1
+          ],
+          "Religion / Ethik": [
+            2
+          ],
+          "Englisch": [
+            2
+          ]
+        },
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [
+              {
+                "value": 2,
+                "createdAt": "2026-04-15T08:36:01.936Z"
+              },
+              {
+                "value": 3,
+                "createdAt": "2026-04-15T08:36:17.315Z"
+              },
+              {
+                "value": 2,
+                "createdAt": "2026-04-15T08:48:49.816Z"
+              },
+              {
+                "value": 1,
+                "createdAt": "2026-04-15T08:49:11.773Z"
+              },
+              {
+                "value": 2,
+                "createdAt": "2026-04-15T08:49:15.016Z"
+              },
+              {
+                "value": 3,
+                "createdAt": "2026-04-15T08:49:16.327Z"
+              }
+            ],
+            "unterricht": [
+              {
+                "value": 2,
+                "createdAt": "2026-04-15T08:44:48.561Z"
+              }
+            ],
+            "pflichtbewusstsein": [
+              {
+                "value": 1,
+                "createdAt": "2026-04-15T09:01:41.043Z"
+              }
+            ],
+            "schulordnung": [
+              {
+                "value": 2,
+                "createdAt": "2026-04-15T09:01:42.953Z"
+              }
+            ]
+          }
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "tim123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "th2026"
+          }
+        ]
+      },
+      {
+        "id": "anna-peters",
+        "name": "Anna Peters",
+        "grades": {
+          "Deutsch": [
+            1
+          ],
+          "Mathematik": [
+            1
+          ],
+          "Sachunterricht": [
+            1
+          ],
+          "Musik": [
+            1
+          ],
+          "Kunst": [
+            1
+          ],
+          "Sport": [
+            2
+          ],
+          "Religion / Ethik": [
+            1
+          ],
+          "Englisch": [
+            1
+          ]
+        },
+        "ratingsDetailed": {
+          "betragen": {
+            "sozialverhalten": [
+              {
+                "value": 3,
+                "createdAt": "2026-04-15T08:53:19.585Z"
+              },
+              {
+                "value": 2,
+                "createdAt": "2026-04-15T08:53:21.090Z"
+              },
+              {
+                "value": 3,
+                "createdAt": "2026-04-15T08:53:25.077Z"
+              }
+            ],
+            "unterricht": [
+              {
+                "value": 2,
+                "createdAt": "2026-04-15T09:14:41.302Z"
+              }
+            ],
+            "pflichtbewusstsein": [
+              {
+                "value": 1,
+                "createdAt": "2026-04-15T09:01:39.538Z"
+              }
+            ],
+            "schulordnung": [
+              {
+                "value": 3,
+                "createdAt": "2026-04-15T09:01:43.975Z"
+              }
+            ]
+          }
+        },
+        "passwords": [
+          {
+            "service": "Anton App",
+            "password": "anna123"
+          },
+          {
+            "service": "Schulportal",
+            "password": "ap2026"
           }
         ]
       }

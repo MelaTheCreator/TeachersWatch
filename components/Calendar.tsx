@@ -111,7 +111,7 @@ export default function Calendar() {
           return (
             <div
               key={i}
-              className="border rounded p-1 min-h-[100px] text-sm cursor-pointer bg-white "
+              className="border rounded p-1 min-h-25 text-sm cursor-pointer bg-white "
               onClick={() => {
                 setSelectedDate(iso);
                 setStartDate(iso);

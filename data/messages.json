@@ -12,5 +12,12 @@
     "userName": "Mela Heß",
     "text": "Naaa! Wo brennts denn?",
     "createdAt": 1776167457035
+  },
+  {
+    "id": "7be02d60-cae1-446e-a9fc-7031e2fc455d",
+    "userId": "hanna@gmx.de",
+    "userName": "Hanna Berger",
+    "text": "Puh, ich glaube, ich werde Webentwicklerin.",
+    "createdAt": 1776247848761
   }
 ]

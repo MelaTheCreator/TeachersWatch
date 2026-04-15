@@ -50,7 +50,7 @@ export default function Chat() {
       {/* Messages */}
       <div className="flex-1 overflow-y-auto border p-3 rounded bg-gray-50">
         {messages.map((msg) => (
-          <div key={msg.id} className="mb-2">
+          <div key={msg.id} className="mb-2 bg-white">
             <span className="font-bold">{msg.userName}: </span>
             <span>{msg.text}</span>
           </div>
@@ -60,7 +60,7 @@ export default function Chat() {
       {/* Input */}
       <div className="flex gap-2 mt-3">
         <input
-          className="border p-2 flex-1 rounded"
+          className="border p-2 flex-1 rounded bg-white"
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Nachricht schreiben..."
